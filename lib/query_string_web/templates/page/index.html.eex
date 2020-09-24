@@ -1,0 +1,12 @@
+<%= button "Hide Greeting",
+      to: Routes.page_path(@conn, :index),
+      method: :get,
+      class: "float-right"%>
+
+<%= button "Display Greeting",
+      to: Routes.page_path(@conn, :index, greeting: "Hello World!"),
+      method: :get,
+      class: "float-right",
+      style: "margin-left:10px;"%>
+
+<h1><%= @greeting %></h1>
