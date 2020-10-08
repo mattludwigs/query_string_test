@@ -17,6 +17,8 @@ defmodule QueryStringWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    post "/", PageController, :post
+    delete "/", PageController, :delete
   end
 
   # Other scopes may use custom stacks.
